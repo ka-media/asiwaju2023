@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TINUBU 2023</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+	<header class="header">
+
+    <a href="" class="logo">
+      <img src="public/img/apc.jpeg">
+      <h3>tinubu 2023</h3>
+    </a>
+
+
+    <form class="search-form">
+      <input type="search" placeholder="search here..." id="searchBox">
+      <label for="searchBox" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-moon" id="theme-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="#aside">aside</a>
+    </nav>
+
+    
+    </form>
+
+  </header>
+
+  <section class="title-container">
+    
+    <h1 class="title">welcome to asiwaju bola ahmad tinubu for president 2023</h1>
+
+  </section>
+
+	<!-- section home starts -->
+
+  <section class="home" id="home">
+
+    <div class="image">
+      <img src="public/img/tinubu.jpeg">
+    </div>
+
+    <div class="content">
+
+      <h3>Awesome Journey</h3>
+
+      <p>face of hope 2023</p>
+
+      <a href="#" class="btn">lets go!</a>
+      
+    </div>
+
+  </section>
+
+  <!-- section home ends -->
+
+
+<!-- aside section starts -->
+  <section class="aside" id="aside">
+
+    <div class="image">
+      <img src="public/img/ab-1.jpg">
+      <h3>hon abdullahi kabir together with asiwaju</h3>
+    </div>
+
+    </div>
+
+  </section>
+
+  <!-- aside section ends -->
+
+   <section class="footer">
+     
+     <div class="box-container">
+
+      <div class="box">
+
+        <p class="credit">hon abdullahi kabir for aswaju 2023 | all rights reserved </p>
+   
+   </section>
+
+
+
+   <!-- footer section ends -->
+
+  <script type="text/javascript">
+    let navbar = document.querySelector('.navbar')
+
+    document.querySelector('#menu-btn').onclick = () => {
+      navbar.classList.toggle('active');
+      searchForm.classList.remove('active');
+    }
+
+    
+
+    let searchForm = document.querySelector('.search-form')
+
+    document.querySelector('#search-btn').onclick = () => {
+      searchForm.classList.toggle('active');
+      navbar.classList.remove('active');
+    }
+
+    window.onscroll = () => {
+      navbar.classList.remove('active');
+      searchForm.classList.remove('active');
+    }
+
+    let themeBtn = document.querySelector('#theme-btn')
+
+    themeBtn.onclick = () => {
+      themeBtn.classList.toggle('fa-sun')
+
+      if (themeBtn.classList.contains('fa-sun')) {
+        document.body.classList.add('active');
+      } 
+      else {
+        document.body.classList.remove('active');
+      }
+    }
+  </script>
+  
+</body>
+</html>
